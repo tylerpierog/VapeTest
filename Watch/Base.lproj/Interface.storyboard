@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Products-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="vapeProducts" title="Products" id="AgC-eL-Hgc" customClass="VapeInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group width="1" height="25" alignment="left" radius="0.0" id="ElY-Om-1Jd">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Vape Mod Brands" id="aPh-dr-XiL">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.03585734083416927" green="0.15919471153846154" blue="0.15621361380052384" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" height="2" alignment="left" hidden="YES" id="Nlt-hY-M4F">
+                            <items>
+                                <button alignment="center" verticalAlignment="center" id="1Pk-AZ-PTf">
+                                    <group key="contentGroup" width="1" alignment="left" id="EiQ-lH-KTd">
+                                        <items>
+                                            <label width="50" alignment="left" text="   👜" textAlignment="center" id="pD3-kv-bfj"/>
+                                            <label alignment="center" verticalAlignment="center" text="Cart" textAlignment="center" id="Ldj-gw-I8C"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <action selector="cartClicked" destination="AgC-eL-Hgc" id="73o-oL-ULJ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.15701066390000001" green="0.69707532049999998" blue="0.68402181110000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group height="1" alignment="center" verticalAlignment="center" id="Rp3-z2-6v8">
+                            <items>
+                                <table alignment="left" id="0kt-yf-lfs">
+                                    <items>
+                                        <tableRow identifier="vapeRow" id="YP9-d6-Hss" customClass="VapeRowController" customModule="Watch_Extension">
+                                            <group key="rootItem" width="1" alignment="left" radius="0.0" spacing="3" id="rKU-33-N2C">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Test Item" textAlignment="left" id="G7k-hO-LYD">
+                                                        <fontDescription key="font" type="system" weight="ultraLight" pointSize="17"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.086636064090000006" green="0.38463541670000001" blue="0.37743269140000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="nameLabel" destination="G7k-hO-LYD" id="9TF-nj-4Jt"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cartContents" destination="Ldj-gw-I8C" id="vjE-M2-b6f"/>
+                        <outlet property="cartLabel" destination="Nlt-hY-M4F" id="70N-uo-z0R"/>
+                        <outlet property="table" destination="0kt-yf-lfs" id="ku9-Fu-IvJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Vape details-->
+        <scene sceneID="NHI-aq-gSZ">
+            <objects>
+                <controller identifier="VapeDetails" title="Vape details" id="0WE-mY-guZ" customClass="detailsViewController" customModule="Watch_Extension">
+                    <items>
+                        <group width="1" alignment="left" radius="0.0" id="1DW-hQ-dbW">
+                            <items>
+                                <label alignment="center" text="Name" id="stp-aE-FlP">
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="17"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.035857340830000001" green="0.1591947115" blue="0.15621361380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <label alignment="center" text="Price:" id="bP7-fq-RAb">
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="16"/>
+                        </label>
+                        <label alignment="center" text="Stock" id="HTc-1X-b5q">
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="16"/>
+                        </label>
+                        <separator alignment="left" id="MBK-jW-CdB">
+                            <color key="color" red="0.086636064090000006" green="0.38463541670000001" blue="0.37743269140000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group alignment="center" verticalAlignment="center" layout="vertical" id="34Z-q3-W3v">
+                            <items>
+                                <group width="100" height="2" alignment="center" id="npY-pI-a3M">
+                                    <items>
+                                        <imageView width="1" height="100" alignment="right" image="smoke_puff" id="7ts-8i-jYM"/>
+                                    </items>
+                                </group>
+                                <button alignment="center" id="9G3-fa-dcg">
+                                    <group key="contentGroup" width="78" height="78" alignment="left" radius="39" id="fwb-rF-d78">
+                                        <items>
+                                            <label width="1" alignment="center" verticalAlignment="center" text="Add To Cart" textAlignment="center" id="3j6-NG-yxT">
+                                                <fontDescription key="font" type="system" weight="ultraLight" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.086636064090000006" green="0.38463541670000001" blue="0.37743269140000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="checkInButtonTapped" destination="0WE-mY-guZ" id="ZYB-Tk-eF3"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="backgroundGroup" destination="npY-pI-a3M" id="ezJ-xT-fbp"/>
+                        <outlet property="nameLabel" destination="stp-aE-FlP" id="g3H-lM-f7U"/>
+                        <outlet property="priceLabel" destination="bP7-fq-RAb" id="iFC-ys-fc1"/>
+                        <outlet property="stockLabel" destination="HTc-1X-b5q" id="hz0-ff-Mft"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="448" y="345"/>
+        </scene>
+        <!--back -->
+        <scene sceneID="88E-yJ-6Hr">
+            <objects>
+                <controller identifier="cloud" title="back " id="6cP-B9-ejW" customClass="CloudViewController" customModule="Watch_Extension">
+                    <items>
+                        <group width="1" alignment="left" radius="0.0" id="6kX-Mb-m4s">
+                            <items>
+                                <label width="97" alignment="center" text="Items In Cart" id="Bxs-cL-8Se">
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="17"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.035857340830000001" green="0.1591947115" blue="0.15621361380000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group alignment="center" id="ayp-cm-UQi">
+                            <items>
+                                <table alignment="left" id="RcH-RC-F4Y">
+                                    <items>
+                                        <tableRow identifier="cartRow" id="g0S-v7-rYI" userLabel="cartRow" customClass="CloudRowController" customModule="Watch_Extension">
+                                            <group key="rootItem" width="1" alignment="left" radius="0.0" id="inu-ie-0bF">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Label" id="tv6-VS-jVZ" userLabel="clabel"/>
+                                                </items>
+                                                <color key="backgroundColor" red="0.086636064090000006" green="0.38463541670000001" blue="0.37743269140000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="cartItemLabel" destination="tv6-VS-jVZ" id="X7P-CX-cvt"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                        <button alignment="left" verticalAlignment="bottom" id="fAu-nx-2Cs">
+                            <group key="contentGroup" width="1" height="40" alignment="left" id="Pos-RS-Xy2">
+                                <items>
+                                    <label alignment="center" verticalAlignment="center" text="Check Out" id="vQ5-bo-8f7"/>
+                                </items>
+                                <color key="backgroundColor" red="0.076308615505695343" green="0.7970547080039978" blue="0.82431495189666748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </group>
+                            <connections>
+                                <action selector="checkOut" destination="6cP-B9-ejW" id="TMw-Oa-Bib"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tableCart" destination="RcH-RC-F4Y" id="RWR-t0-zlR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="731" y="332"/>
+        </scene>
+    </scenes>
+</document>

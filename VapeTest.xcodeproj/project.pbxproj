@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		299A86261CEB9682009E56FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A86251CEB9682009E56FC /* AppDelegate.swift */; };
+		299A86281CEB9682009E56FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A86271CEB9682009E56FC /* ViewController.swift */; };
+		299A862B1CEB9682009E56FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299A86291CEB9682009E56FC /* Main.storyboard */; };
+		299A862D1CEB9682009E56FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299A862C1CEB9682009E56FC /* Assets.xcassets */; };
+		299A86301CEB9682009E56FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299A862E1CEB9682009E56FC /* LaunchScreen.storyboard */; };
+		299A86461CEB969D009E56FC /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 299A86451CEB969D009E56FC /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		299A864F1CEB969D009E56FC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A864E1CEB969D009E56FC /* ExtensionDelegate.swift */; };
+		299A86511CEB969D009E56FC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A86501CEB969D009E56FC /* NotificationController.swift */; };
+		299A86531CEB969D009E56FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299A86521CEB969D009E56FC /* Assets.xcassets */; };
+		299A86571CEB969D009E56FC /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 299A86391CEB969D009E56FC /* Watch.app */; };
+		299A86671CEB98F2009E56FC /* Vape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A86661CEB98F2009E56FC /* Vape.swift */; };
+		299A86691CEBA3A3009E56FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299A86681CEBA3A3009E56FC /* Assets.xcassets */; };
+		299A866D1CEBA45A009E56FC /* VapeRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A866C1CEBA45A009E56FC /* VapeRowController.swift */; };
+		299A86701CEBABE8009E56FC /* Vape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A86661CEB98F2009E56FC /* Vape.swift */; };
+		299A86751CEC8EA2009E56FC /* Vape.json in Resources */ = {isa = PBXBuildFile; fileRef = 299A86741CEC8EA2009E56FC /* Vape.json */; };
+		299A86761CEC8EA2009E56FC /* Vape.json in Resources */ = {isa = PBXBuildFile; fileRef = 299A86741CEC8EA2009E56FC /* Vape.json */; };
+		299A86791CEC9BBA009E56FC /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A86771CEC9BBA009E56FC /* detailsViewController.swift */; };
+		299A867D1CECE5FF009E56FC /* CloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A867C1CECE5FF009E56FC /* CloudViewController.swift */; };
+		299A86801CEE3657009E56FC /* VapeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A866E1CEBA834009E56FC /* VapeInterfaceController.swift */; };
+		299A86821CEE3660009E56FC /* VapeRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A866C1CEBA45A009E56FC /* VapeRowController.swift */; };
+		299A86891CEE4594009E56FC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299A863B1CEB969D009E56FC /* Interface.storyboard */; };
+		299A868A1CEE4599009E56FC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299A863B1CEB969D009E56FC /* Interface.storyboard */; };
+		299A868E1CEF459C009E56FC /* CloudRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299A868D1CEF459C009E56FC /* CloudRowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		299A86471CEB969D009E56FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 299A861A1CEB9682009E56FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 299A86441CEB969D009E56FC;
+			remoteInfo = "Watch Extension";
+		};
+		299A86551CEB969D009E56FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 299A861A1CEB9682009E56FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 299A86381CEB969D009E56FC;
+			remoteInfo = Watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		299A865B1CEB969D009E56FC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				299A86461CEB969D009E56FC /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299A865F1CEB969D009E56FC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				299A86571CEB969D009E56FC /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		299A86221CEB9682009E56FC /* VapeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VapeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		299A86251CEB9682009E56FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		299A86271CEB9682009E56FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		299A862A1CEB9682009E56FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		299A862C1CEB9682009E56FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		299A862F1CEB9682009E56FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		299A86311CEB9682009E56FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299A86391CEB969D009E56FC /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		299A863C1CEB969D009E56FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		299A86401CEB969D009E56FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299A86451CEB969D009E56FC /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		299A864B1CEB969D009E56FC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		299A864E1CEB969D009E56FC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		299A86501CEB969D009E56FC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		299A86521CEB969D009E56FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		299A86541CEB969D009E56FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299A86661CEB98F2009E56FC /* Vape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vape.swift; sourceTree = "<group>"; };
+		299A86681CEBA3A3009E56FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		299A866C1CEBA45A009E56FC /* VapeRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VapeRowController.swift; sourceTree = "<group>"; };
+		299A866E1CEBA834009E56FC /* VapeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VapeInterfaceController.swift; sourceTree = "<group>"; };
+		299A86741CEC8EA2009E56FC /* Vape.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vape.json; sourceTree = "<group>"; };
+		299A86771CEC9BBA009E56FC /* detailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
+		299A867C1CECE5FF009E56FC /* CloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudViewController.swift; sourceTree = "<group>"; };
+		299A868D1CEF459C009E56FC /* CloudRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudRowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		299A861F1CEB9682009E56FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299A86421CEB969D009E56FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		299A86191CEB9682009E56FC = {
+			isa = PBXGroup;
+			children = (
+				299A86631CEB9893009E56FC /* Shared */,
+				299A86241CEB9682009E56FC /* VapeTest */,
+				299A863A1CEB969D009E56FC /* Watch */,
+				299A86491CEB969D009E56FC /* Watch Extension */,
+				299A86231CEB9682009E56FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		299A86231CEB9682009E56FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				299A86221CEB9682009E56FC /* VapeTest.app */,
+				299A86391CEB969D009E56FC /* Watch.app */,
+				299A86451CEB969D009E56FC /* Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		299A86241CEB9682009E56FC /* VapeTest */ = {
+			isa = PBXGroup;
+			children = (
+				299A86251CEB9682009E56FC /* AppDelegate.swift */,
+				299A86271CEB9682009E56FC /* ViewController.swift */,
+				299A86291CEB9682009E56FC /* Main.storyboard */,
+				299A862C1CEB9682009E56FC /* Assets.xcassets */,
+				299A862E1CEB9682009E56FC /* LaunchScreen.storyboard */,
+				299A86311CEB9682009E56FC /* Info.plist */,
+			);
+			path = VapeTest;
+			sourceTree = "<group>";
+		};
+		299A863A1CEB969D009E56FC /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				299A86681CEBA3A3009E56FC /* Assets.xcassets */,
+				299A863B1CEB969D009E56FC /* Interface.storyboard */,
+				299A86401CEB969D009E56FC /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		299A86491CEB969D009E56FC /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				299A868D1CEF459C009E56FC /* CloudRowController.swift */,
+				299A864E1CEB969D009E56FC /* ExtensionDelegate.swift */,
+				299A86501CEB969D009E56FC /* NotificationController.swift */,
+				299A86521CEB969D009E56FC /* Assets.xcassets */,
+				299A86541CEB969D009E56FC /* Info.plist */,
+				299A864A1CEB969D009E56FC /* Supporting Files */,
+				299A866C1CEBA45A009E56FC /* VapeRowController.swift */,
+				299A866E1CEBA834009E56FC /* VapeInterfaceController.swift */,
+				299A86771CEC9BBA009E56FC /* detailsViewController.swift */,
+				299A867C1CECE5FF009E56FC /* CloudViewController.swift */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		299A864A1CEB969D009E56FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				299A864B1CEB969D009E56FC /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		299A86631CEB9893009E56FC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				299A86661CEB98F2009E56FC /* Vape.swift */,
+				299A86741CEC8EA2009E56FC /* Vape.json */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		299A86211CEB9682009E56FC /* VapeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 299A86341CEB9682009E56FC /* Build configuration list for PBXNativeTarget "VapeTest" */;
+			buildPhases = (
+				299A861E1CEB9682009E56FC /* Sources */,
+				299A861F1CEB9682009E56FC /* Frameworks */,
+				299A86201CEB9682009E56FC /* Resources */,
+				299A865F1CEB969D009E56FC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				299A86561CEB969D009E56FC /* PBXTargetDependency */,
+			);
+			name = VapeTest;
+			productName = VapeTest;
+			productReference = 299A86221CEB9682009E56FC /* VapeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		299A86381CEB969D009E56FC /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 299A865C1CEB969D009E56FC /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				299A86371CEB969D009E56FC /* Resources */,
+				299A865B1CEB969D009E56FC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				299A86481CEB969D009E56FC /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = 299A86391CEB969D009E56FC /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		299A86441CEB969D009E56FC /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 299A86581CEB969D009E56FC /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				299A86411CEB969D009E56FC /* Sources */,
+				299A86421CEB969D009E56FC /* Frameworks */,
+				299A86431CEB969D009E56FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 299A86451CEB969D009E56FC /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		299A861A1CEB9682009E56FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = RBC;
+				TargetAttributes = {
+					299A86211CEB9682009E56FC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					299A86381CEB969D009E56FC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					299A86441CEB969D009E56FC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 299A861D1CEB9682009E56FC /* Build configuration list for PBXProject "VapeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 299A86191CEB9682009E56FC;
+			productRefGroup = 299A86231CEB9682009E56FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				299A86211CEB9682009E56FC /* VapeTest */,
+				299A86381CEB969D009E56FC /* Watch */,
+				299A86441CEB969D009E56FC /* Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		299A86201CEB9682009E56FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299A86301CEB9682009E56FC /* LaunchScreen.storyboard in Resources */,
+				299A862D1CEB9682009E56FC /* Assets.xcassets in Resources */,
+				299A862B1CEB9682009E56FC /* Main.storyboard in Resources */,
+				299A86751CEC8EA2009E56FC /* Vape.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299A86371CEB969D009E56FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299A868A1CEE4599009E56FC /* Interface.storyboard in Resources */,
+				299A86691CEBA3A3009E56FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299A86431CEB969D009E56FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299A86531CEB969D009E56FC /* Assets.xcassets in Resources */,
+				299A86891CEE4594009E56FC /* Interface.storyboard in Resources */,
+				299A86761CEC8EA2009E56FC /* Vape.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		299A861E1CEB9682009E56FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299A86281CEB9682009E56FC /* ViewController.swift in Sources */,
+				299A86671CEB98F2009E56FC /* Vape.swift in Sources */,
+				299A86261CEB9682009E56FC /* AppDelegate.swift in Sources */,
+				299A86821CEE3660009E56FC /* VapeRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299A86411CEB969D009E56FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299A86511CEB969D009E56FC /* NotificationController.swift in Sources */,
+				299A867D1CECE5FF009E56FC /* CloudViewController.swift in Sources */,
+				299A86791CEC9BBA009E56FC /* detailsViewController.swift in Sources */,
+				299A86801CEE3657009E56FC /* VapeInterfaceController.swift in Sources */,
+				299A86701CEBABE8009E56FC /* Vape.swift in Sources */,
+				299A864F1CEB969D009E56FC /* ExtensionDelegate.swift in Sources */,
+				299A868E1CEF459C009E56FC /* CloudRowController.swift in Sources */,
+				299A866D1CEBA45A009E56FC /* VapeRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		299A86481CEB969D009E56FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 299A86441CEB969D009E56FC /* Watch Extension */;
+			targetProxy = 299A86471CEB969D009E56FC /* PBXContainerItemProxy */;
+		};
+		299A86561CEB969D009E56FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 299A86381CEB969D009E56FC /* Watch */;
+			targetProxy = 299A86551CEB969D009E56FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		299A86291CEB9682009E56FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				299A862A1CEB9682009E56FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		299A862E1CEB9682009E56FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				299A862F1CEB9682009E56FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		299A863B1CEB969D009E56FC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				299A863C1CEB969D009E56FC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		299A86321CEB9682009E56FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		299A86331CEB9682009E56FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		299A86351CEB9682009E56FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VapeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rbc.VapeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		299A86361CEB9682009E56FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VapeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rbc.VapeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		299A86591CEB969D009E56FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rbc.VapeTest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		299A865A1CEB969D009E56FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rbc.VapeTest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		299A865D1CEB969D009E56FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rbc.VapeTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		299A865E1CEB969D009E56FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rbc.VapeTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		299A861D1CEB9682009E56FC /* Build configuration list for PBXProject "VapeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299A86321CEB9682009E56FC /* Debug */,
+				299A86331CEB9682009E56FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		299A86341CEB9682009E56FC /* Build configuration list for PBXNativeTarget "VapeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299A86351CEB9682009E56FC /* Debug */,
+				299A86361CEB9682009E56FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		299A86581CEB969D009E56FC /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299A86591CEB969D009E56FC /* Debug */,
+				299A865A1CEB969D009E56FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		299A865C1CEB969D009E56FC /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299A865D1CEB969D009E56FC /* Debug */,
+				299A865E1CEB969D009E56FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 299A861A1CEB9682009E56FC /* Project object */;
+}
